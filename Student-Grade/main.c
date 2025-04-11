@@ -74,7 +74,7 @@ int main () {
 
 //Write File  Function
 void  Writefile() {
-    FILE * Record = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Student-Grade\\Grade.dat", "wb");
+    FILE * Record = fopen("Grade.dat", "wb");
     if (Record == NULL)
     {
         /* code */
@@ -106,7 +106,7 @@ void  Writefile() {
 
 //Reding Records
 void Readline () {
-    FILE * Record = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Student-Grade\\Grade.dat", "rb");
+    FILE * Record = fopen("Grade.dat", "rb");
     if (Record == NULL)
     {
         /* code */
@@ -129,7 +129,7 @@ void Readline () {
 
 //CalCulate Avarage Function
 void CalculateAvarage (){
-    FILE * Record = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Student-Grade\\Grade.dat", "rb");
+    FILE * Record = fopen("Grade.dat", "rb");
     if (Record == NULL)
     {
         /* code */
@@ -157,7 +157,7 @@ void CalculateAvarage (){
 
 //Search By ID 
 void SearchRecord(){
-    FILE * Record = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Student-Grade\\Grade.dat", "rb");
+    FILE * Record = fopen("Grade.dat", "rb");
     if (Record == NULL)
     {
         /* code */

@@ -8,7 +8,7 @@ int Word = 0;
 int LineCount = 0;
 
 int main() {
-    FILE *ReadFile = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Word-counter\\text.txt","r");
+    FILE *ReadFile = fopen("text.txt","r");
 
     if (ReadFile == NULL)
     {

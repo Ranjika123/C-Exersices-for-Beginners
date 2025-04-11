@@ -47,8 +47,8 @@ int main () {
 
 
 void Encryption () {
-    FILE * Read = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Encryption and Decryption\\Tetxt.txt","r");
-    FILE * Write = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Encryption and Decryption\\Write.Txt","w");
+    FILE * Read = fopen("Tetxt.txt","r");
+    FILE * Write = fopen("Write.Txt","w");
 
     if ( Read == NULL || Write == NULL)
     {
@@ -69,8 +69,8 @@ void Encryption () {
 }
 
 void Decryption () {
-    FILE * Encrypted = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Encryption and Decryption\\Write.Txt","r");
-    FILE * Decrypted = fopen("E:\\---PROJECTS---\\---C----\\Starter\\Encryption and Decryption\\Decrypt.txt","w");
+    FILE * Encrypted = fopen("Write.Txt","r");
+    FILE * Decrypted = fopen("Decrypt.txt","w");
 
     if (Encrypted == NULL || Decrypted == NULL)
     {

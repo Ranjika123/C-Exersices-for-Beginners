@@ -15,7 +15,7 @@ FILE *small_file = NULL;
 
 int main() {
     // Open the input file
-    FILE *BigFile = fopen("E:\\---PROJECTS---\\---C----\\Starter\\File-Spliter\\big-text.txt", "r");
+    FILE *BigFile = fopen("big-text.txt", "r");
     if (BigFile == NULL) {
         perror("File Cannot be Opened");
         return 1;
@@ -35,7 +35,7 @@ int main() {
                 fclose(small_file); // Close previous file
             }
             // Create filename like Part1.txt
-            sprintf(filename, "E:\\---PROJECTS---\\---C----\\Starter\\File-Spliter\\Part%d.txt", file_count);
+            sprintf(filename, "Part%d.txt", file_count);
             small_file = fopen(filename, "w");
             if (small_file == NULL) {
                 printf("Cannot create %s\n", filename);
